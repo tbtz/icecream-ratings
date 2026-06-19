@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: icecream-ratings
+    runtime: node
+    repo: https://github.com/yourusername/icecream-ratings
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_VERSION
+        value: 20
+    buildCommand: cd server && npm install && npm run build
+    startCommand: cd server && npm start
