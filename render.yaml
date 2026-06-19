@@ -2,7 +2,7 @@ services:
   - type: web
     name: icecream-ratings
     runtime: node
-    repo: https://github.com/yourusername/icecream-ratings
+    repo: https://github.com/tbtz/icecream-ratings
     plan: free
     envVars:
       - key: MONGODB_URI
